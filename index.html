@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northern Plains Dozer Services — Dozer, Excavation &amp; Land Clearing in Cushing, OK</title>
+<meta name="description" content="Northern Plains Dozer Services — dozer &amp; grading, excavation, land clearing, and pond work in Cushing, Oklahoma. 708 E Main St. Call (918) 399-2480. Mon–Fri 9 AM–6 PM.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23C8641F'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial,sans-serif' font-size='26' font-weight='900' fill='%23fff' text-anchor='middle'%3ENP%3C/text%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/archivo-black.woff2') format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('assets/fonts/archivo-800.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/inter-400.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/inter-600.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/inter-700.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url('assets/fonts/inter-800.woff2') format('woff2')}
+:root{
+  --iron:#1B1C1E; --iron-2:#232426; --iron-deep:#131415;
+  --clay:#C8641F; --clay-2:#DE7A2E; --clay-soft:#F6E3D2;
+  --sand:#F4EFE6; --paper:#FBF8F2; --white:#FFFFFF;
+  --ink:#1B1C1E; --muted:#5C554A; --muted-lt:#B9B0A1;
+  --line:rgba(27,28,30,.14); --line-lt:rgba(244,239,230,.16);
+  --radius:6px;
+  --font-d:'Archivo Black','Archivo',system-ui,sans-serif;
+  --font-h:'Archivo',system-ui,sans-serif;
+  --font-b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{scroll-margin-top:84px}
+.eyebrow{font-family:var(--font-h);font-weight:800;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.65rem;color:var(--clay)}
+.eyebrow::before{content:"";width:34px;height:3px;background:var(--clay);flex:none}
+.sec-head{max-width:680px;margin-bottom:44px}
+.sec-head h2{font-family:var(--font-h);font-weight:800;font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.06;letter-spacing:-.01em;text-transform:uppercase;margin:.75rem 0 .7rem}
+.sec-head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--font-h);font-weight:800;font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;padding:.95rem 1.6rem;border-radius:4px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s ease,transform .2s ease,border-color .2s ease;white-space:nowrap}
+.btn svg{width:17px;height:17px;flex:none}
+.btn-clay{background:var(--clay);color:#fff}
+.btn-clay:hover{background:var(--clay-2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+.btn-ghost:hover{border-color:#fff;transform:translateY(-2px)}
+.btn-ink{background:var(--iron);color:#fff}
+.btn-ink:hover{background:var(--iron-2);transform:translateY(-2px)}
+/* ---------- utility strip ---------- */
+.utility{background:var(--iron-deep);color:var(--muted-lt);font-size:.74rem;letter-spacing:.06em}
+.utility .wrap{display:flex;justify-content:space-between;align-items:center;gap:6px 18px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.utility b{color:#fff;font-weight:700}
+.utility .u-phone{color:#fff;text-decoration:none;font-weight:800}
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(251,248,242,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;min-width:0}
+.badge{width:44px;height:44px;background:var(--clay);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:1.05rem;color:#fff;flex:none;letter-spacing:.02em}
+.brand-name{font-family:var(--font-h);font-weight:800;font-size:1.02rem;line-height:1.12;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap}
+.brand-name small{display:block;font-family:var(--font-b);font-weight:800;font-size:.62rem;letter-spacing:.3em;color:var(--clay);margin-top:3px}
+nav.main{display:flex;align-items:center;gap:30px}
+nav.main a{font-family:var(--font-h);font-weight:800;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav.main a:hover{color:var(--clay)}
+.header-call{padding:.7rem 1.15rem;font-size:.85rem}
+.call-short{display:none}
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--iron);color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,28,30,.9) 0%,rgba(27,28,30,.68) 46%,rgba(27,28,30,.28) 100%),linear-gradient(0deg,rgba(27,28,30,.72) 0%,rgba(27,28,30,0) 55%)}
+.hero-in{position:relative;padding:96px 24px 88px;max-width:1200px;margin:0 auto}
+.hero-copy{max-width:720px}
+.hero .eyebrow{color:var(--clay-soft)}
+.hero .eyebrow::before{background:var(--clay)}
+.hero h1{font-family:var(--font-d);font-weight:400;font-size:clamp(2.3rem,7vw,4.3rem);line-height:1.03;letter-spacing:-.005em;text-transform:uppercase;margin:1.1rem 0 1.1rem}
+.hero h1 .l2{color:var(--clay-2);display:block}
+.hero p.lede{font-size:1.12rem;line-height:1.55;color:#EDE7DA;max-width:600px;margin-bottom:1.9rem}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-checks{display:flex;gap:14px 34px;flex-wrap:wrap;margin-top:2.6rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.22)}
+.hero-checks span{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-h);font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;white-space:nowrap}
+.hero-checks i{font-style:normal;color:var(--clay-2);font-size:1rem;line-height:1}
+/* ---------- trust band ---------- */
+.trust{background:var(--iron);border-top:1px solid var(--line-lt)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-top:0;padding-bottom:0}
+.stat{padding:34px 26px;text-align:left;border-left:1px solid var(--line-lt)}
+.stat:first-child{border-left:none;padding-left:0}
+.stat b{display:block;font-family:var(--font-d);font-weight:400;font-size:2.4rem;line-height:1;color:var(--clay-2)}
+.stat span{display:block;font-family:var(--font-h);font-weight:800;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sand);margin-top:9px}
+/* ---------- services ---------- */
+.services{background:var(--sand);padding:92px 0}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{background:#fff;border:1px solid var(--line);border-top:4px solid var(--clay);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column}
+.svc .num{font-family:var(--font-d);font-size:1.5rem;color:var(--clay);line-height:1}
+.svc h3{font-family:var(--font-h);font-weight:800;font-size:1.18rem;letter-spacing:.01em;text-transform:uppercase;margin:14px 0 8px;line-height:1.2}
+.svc p{color:var(--muted);font-size:.96rem;flex:1}
+.svc .tags{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--font-h);font-weight:800;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.svc-photo{position:relative;border-radius:var(--radius);overflow:hidden;min-height:260px;border:1px solid var(--line)}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.svc-photo .chip{position:absolute;left:16px;bottom:16px;background:var(--iron);color:#fff;font-family:var(--font-h);font-weight:800;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;padding:9px 14px;border-radius:4px}
+.svc-cta{background:var(--iron);color:#fff;border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;justify-content:center}
+.svc-cta h3{font-family:var(--font-h);font-weight:800;font-size:1.25rem;text-transform:uppercase;line-height:1.2;margin-bottom:10px}
+.svc-cta p{color:#D8D0C2;font-size:.96rem;flex:1}
+.svc-cta a.tel{font-family:var(--font-d);font-size:1.3rem;color:var(--clay-2);text-decoration:none;margin-top:16px;letter-spacing:.01em}
+/* ---------- showcase ---------- */
+.showcase{background:var(--paper);padding:92px 0}
+.show-wide{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.show-wide img{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 42%}
+.show-wide .chip{position:absolute;left:20px;bottom:20px;background:var(--iron);color:#fff;font-family:var(--font-h);font-weight:800;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;padding:9px 14px;border-radius:4px}
+.includes{margin-top:24px;background:var(--iron);border-radius:var(--radius);padding:26px 34px;display:flex;align-items:center;gap:14px 34px;flex-wrap:wrap}
+.includes .inc-k{font-family:var(--font-h);font-weight:800;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay-2);white-space:nowrap}
+.includes span{font-family:var(--font-h);font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sand)}
+/* ---------- process ---------- */
+.process{background:var(--sand);padding:92px 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.step{background:#fff;border:1px solid var(--line);border-top:4px solid var(--clay);border-radius:var(--radius);padding:30px 28px}
+.step .num{font-family:var(--font-d);font-size:2.2rem;color:var(--clay);line-height:1}
+.step h3{font-family:var(--font-h);font-weight:800;font-size:1.12rem;text-transform:uppercase;letter-spacing:.02em;margin:16px 0 8px;line-height:1.25}
+.step p{color:var(--muted);font-size:.96rem}
+.step p a{color:var(--clay);font-weight:700;text-decoration:none}
+/* ---------- quote ---------- */
+.quote{background:var(--iron);color:#fff;padding:92px 0}
+.quote-grid{display:grid;grid-template-columns:5fr 6fr;gap:64px;align-items:start}
+.quote-copy .eyebrow{color:var(--clay-soft)}
+.quote-copy h2{font-family:var(--font-h);font-weight:800;font-size:clamp(1.9rem,3.4vw,2.6rem);line-height:1.08;text-transform:uppercase;margin:.8rem 0 1rem;letter-spacing:-.01em}
+.quote-copy p{color:#D8D0C2;max-width:440px}
+.quote-copy .q-phone{display:block;font-family:var(--font-d);font-size:clamp(1.7rem,3vw,2.2rem);color:var(--clay-2);text-decoration:none;margin-top:1.6rem;letter-spacing:.01em}
+.quote-copy .q-addr{font-family:var(--font-h);font-weight:800;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sand);margin-top:1rem}
+.form-card{background:var(--sand);color:var(--ink);border-radius:var(--radius);padding:32px;box-shadow:0 24px 60px -22px rgba(0,0,0,.55)}
+.form-card h3{font-family:var(--font-h);font-weight:800;font-size:1.3rem;text-transform:uppercase;letter-spacing:.01em}
+.form-card>p{font-size:.9rem;color:var(--muted);margin:.35rem 0 1.4rem}
+.field{margin-bottom:16px}
+.field label{display:block;font-family:var(--font-h);font-weight:800;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:.95rem;color:var(--ink);padding:.8rem .95rem;border:1.5px solid rgba(27,28,30,.25);border-radius:4px;background:#fff}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--clay)}
+.field textarea{resize:vertical;min-height:96px}
+.form-card .btn{width:100%;margin-top:4px}
+.form-note{font-size:.76rem;color:var(--muted);margin-top:.9rem}
+.form-ok{display:none;background:#E9F2E4;border:1px solid rgba(46,110,46,.35);border-radius:6px;padding:18px;margin-top:4px}
+.form-ok.show{display:block}
+.form-ok b{font-family:var(--font-h);font-size:1.02rem}
+.form-ok p{font-size:.92rem;color:#3C4A3C;margin-top:4px}
+/* ---------- hours & location ---------- */
+.visit{background:var(--paper);padding:92px 0}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.visit-card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--clay);border-radius:var(--radius);padding:32px}
+.visit-card .vk{font-family:var(--font-h);font-weight:800;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay)}
+.visit-card h3{font-family:var(--font-h);font-weight:800;font-size:1.45rem;text-transform:uppercase;margin:12px 0 6px;line-height:1.2}
+.visit-card p{color:var(--muted)}
+.visit-card .big{font-family:var(--font-d);font-size:1.5rem;line-height:1.25;margin-top:14px}
+.visit-card .big small{display:block;font-family:var(--font-b);font-weight:600;font-size:.9rem;color:var(--muted);margin-top:4px}
+.visit-card .btn{margin-top:22px}
+/* ---------- footer ---------- */
+footer{background:var(--iron-deep);color:var(--muted-lt);padding:52px 0 36px}
+.foot-top{display:flex;justify-content:space-between;align-items:center;gap:16px 24px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid var(--line-lt)}
+.foot-top .fname{font-family:var(--font-h);font-weight:800;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:#fff}
+.foot-top .fphone{font-family:var(--font-d);font-size:1.15rem;color:var(--clay-2);text-decoration:none}
+.foot-bot{display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;padding-top:22px;font-size:.78rem;letter-spacing:.04em}
+.foot-bot .concept{color:#fff;font-weight:600}
+/* ---------- sticky mobile call bar ---------- */
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:70;display:none;gap:10px;transform:translateY(180%);transition:transform .45s ease}
+.callbar.show{transform:none}
+.callbar .btn{flex:1;padding:.85rem .5rem;font-size:.85rem}
+@media (max-width:900px){
+  nav.main a:not(.header-call){display:none}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .stat{padding:26px 20px}
+  .stat:nth-child(3){border-left:none;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line-lt)}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .quote-grid{grid-template-columns:1fr;gap:40px}
+}
+@media (max-width:860px){
+  body{padding-bottom:76px}
+  .callbar{display:flex}
+}
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  .hero h1{font-size:2rem}
+  .services,.showcase,.process,.quote,.visit{padding:64px 0}
+  .hero-in{padding:72px 20px 64px}
+  .hero p.lede{font-size:1.02rem}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-photo{min-height:220px}
+  .steps{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:1fr}
+  .show-wide img{aspect-ratio:16/10}
+  .stat b{font-size:2rem}
+  .header-call{padding:.65rem .9rem}
+  .call-num{display:none}
+  .call-short{display:inline}
+  .brand-name{font-size:.92rem}
+  .form-card{padding:26px 22px}
+  .includes{padding:22px}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GeneralContractor","name":"Northern Plains Dozer Services","telephone":"+1-918-399-2480","address":{"@type":"PostalAddress","streetAddress":"708 E Main St","addressLocality":"Cushing","addressRegion":"OK","postalCode":"74023","addressCountry":"US"},"openingHours":"Mo-Fr 09:00-18:00"}
+</script>
+</head>
+<body>
+
+<div class="utility">
+  <div class="wrap">
+    <span>CONTRACTOR &middot; <b>DEMOLITION &amp; EXCAVATION</b></span>
+    <span>MON&ndash;FRI 9 AM&ndash;6 PM &middot; <a class="u-phone" href="tel:+19183992480">(918) 399-2480</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap header-in">
+    <a class="brand" href="#top">
+      <span class="badge">NP</span>
+      <span class="brand-name">Northern Plains<small>Dozer Services</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">The Work</a>
+      <a href="#process">Process</a>
+      <a href="#quote">Contact</a>
+      <a class="btn btn-clay header-call" href="tel:+19183992480">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="call-num">(918) 399-2480</span><span class="call-short">Call</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="assets/excavator_performs.jpg" alt="Excavator moving dirt on an open job site" fetchpriority="high">
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div class="hero-copy">
+      <span class="eyebrow">Dozer &middot; Excavation &middot; Land Clearing &middot; Pond Work</span>
+      <h1>We move dirt.<span class="l2">You build on it.</span></h1>
+      <p class="lede">Building pads, ponds, driveways, and cleared land &mdash; quoted on-site, in person, before a single track rolls.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-clay" href="#quote">Request a Quote</a>
+        <a class="btn btn-ghost" href="tel:+19183992480">Call (918) 399-2480</a>
+      </div>
+      <div class="hero-checks">
+        <span><i>&#10003;</i> Free On-Site Quotes</span>
+        <span><i>&#10003;</i> Local Crew, Local Ground</span>
+        <span><i>&#10003;</i> Ponds &middot; Pads &middot; Clearing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<section class="trust" aria-label="At a glance">
+  <div class="wrap">
+    <div class="stat"><b>4</b><span>Core Services</span></div>
+    <div class="stat"><b>1</b><span>Call From Quote to Work</span></div>
+    <div class="stat"><b>100%</b><span>Quotes Done On-Site</span></div>
+    <div class="stat"><b>708</b><span>East Main St, Cushing</span></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Four ways we move dirt.</h2>
+      <p>Dirt work, done the way it was quoted. Pick the job &mdash; we bring the iron.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc">
+        <span class="num">01</span>
+        <h3>Dozer &amp; Grading</h3>
+        <p>Building pads, driveways, and drainage grades cut to spec and finished clean.</p>
+        <div class="tags">Pads &middot; Roads &middot; Grades</div>
+      </article>
+      <article class="svc">
+        <span class="num">02</span>
+        <h3>Excavation</h3>
+        <p>Digging for foundations, utilities, and site prep &mdash; clean holes, spoils handled.</p>
+        <div class="tags">Foundations &middot; Utilities</div>
+      </article>
+      <article class="svc">
+        <span class="num">03</span>
+        <h3>Land Clearing</h3>
+        <p>Brush, trees, and old fence lines cleared and stacked or hauled &mdash; land ready to use.</p>
+        <div class="tags">Brush &middot; Trees &middot; Fence Lines</div>
+      </article>
+      <article class="svc">
+        <span class="num">04</span>
+        <h3>Pond Work</h3>
+        <p>New ponds dug right, old ponds cleaned out and re-banked to hold water again.</p>
+        <div class="tags">New Ponds &middot; Cleanouts</div>
+      </article>
+      <figure class="svc-photo">
+        <img src="assets/bulldozer_at_earthworks.jpg" alt="Dozer working the bank above a pond" loading="lazy">
+        <figcaption class="chip">Pond Work</figcaption>
+      </figure>
+      <div class="svc-cta">
+        <h3>Don&rsquo;t see your job?</h3>
+        <p>If it involves dirt and tracks &mdash; call and ask. The quote is free.</p>
+        <a class="tel" href="tel:+19183992480">(918) 399-2480</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="showcase" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The Work</span>
+      <h2>Ground that speaks for itself.</h2>
+      <p>Cut, graded, and left ready to build on. That&rsquo;s the whole pitch.</p>
+    </div>
+    <figure class="show-wide">
+      <img src="assets/hitachi_zaxis.jpg" alt="Excavator at work on a job site" loading="lazy">
+      <figcaption class="chip">Excavation</figcaption>
+    </figure>
+    <div class="includes">
+      <span class="inc-k">Every job includes</span>
+      <span>On-Site Quote, In Person</span>
+      <span>One Call, Quote to Work</span>
+      <span>Mon&ndash;Fri 9 AM&ndash;6 PM</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How It Works</span>
+      <h2>From first call to finished dirt.</h2>
+      <p>No runaround. Three steps, and your ground is ready.</p>
+    </div>
+    <div class="steps">
+      <article class="step">
+        <span class="num">01</span>
+        <h3>Call</h3>
+        <p>Tell us what the land needs. One call starts it &mdash; <a href="tel:+19183992480">(918) 399-2480</a>.</p>
+      </article>
+      <article class="step">
+        <span class="num">02</span>
+        <h3>On-Site Quote</h3>
+        <p>We come walk your ground in person and quote the job on the spot.</p>
+      </article>
+      <article class="step">
+        <span class="num">03</span>
+        <h3>We Move the Dirt</h3>
+        <p>Local crew and right-size iron, worked the way it was quoted.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote" id="quote">
+  <div class="wrap quote-grid">
+    <div class="quote-copy">
+      <span class="eyebrow">Get a Quote</span>
+      <h2>Get your free on-site quote</h2>
+      <p>Walk your ground with us and get a real number &mdash; no forms lost in an inbox, no obligation.</p>
+      <a class="q-phone" href="tel:+19183992480">(918) 399-2480</a>
+      <p class="q-addr">708 East Main St &middot; Cushing, Oklahoma</p>
+    </div>
+    <div class="form-card">
+      <form id="quote-form" novalidate>
+        <h3>Request My Quote</h3>
+        <p>Tell us about the job and we&rsquo;ll call you back to set up the on-site look.</p>
+        <div class="field">
+          <label for="q-name">Your Name</label>
+          <input id="q-name" name="name" type="text" autocomplete="name" placeholder="Jane Landowner" required>
+        </div>
+        <div class="field">
+          <label for="q-phone">Phone</label>
+          <input id="q-phone" name="phone" type="tel" autocomplete="tel" placeholder="(918) 555-0100" required>
+        </div>
+        <div class="field">
+          <label for="q-service">Service Needed</label>
+          <select id="q-service" name="service" required>
+            <option value="" selected>Choose a service</option>
+            <option>Dozer &amp; Grading</option>
+            <option>Excavation</option>
+            <option>Land Clearing</option>
+            <option>Pond Work</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="q-msg">Tell Us About the Job</label>
+          <textarea id="q-msg" name="message" placeholder="A building pad by the barn&hellip;"></textarea>
+        </div>
+        <button class="btn btn-clay" type="submit">Request My Quote</button>
+        <p class="form-note">Demo form &mdash; nothing is sent anywhere yet.</p>
+      </form>
+      <div class="form-ok" id="form-ok" role="status">
+        <b>Request received.</b>
+        <p>Thanks &mdash; we&rsquo;ll call you back to set up your free on-site quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS & LOCATION -->
+<section class="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Visit or Call</span>
+      <h2>Find us on East Main.</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <span class="vk">Hours</span>
+        <h3>Open weekdays</h3>
+        <p>Call during work hours and talk to a real person about your job.</p>
+        <p class="big">Monday &ndash; Friday<small>9:00 AM &ndash; 6:00 PM</small></p>
+        <a class="btn btn-ink" href="tel:+19183992480">Call (918) 399-2480</a>
+      </div>
+      <div class="visit-card">
+        <span class="vk">Location</span>
+        <h3>708 E Main St</h3>
+        <p>Our yard and office in Cushing, Oklahoma.</p>
+        <p class="big">Cushing, OK 74023<small>East Main Street</small></p>
+        <a class="btn btn-clay" href="https://www.google.com/maps/dir/?api=1&amp;destination=Northern+Plains+Dozer+Services,+708+E+Main+St,+Cushing,+OK+74023" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span class="fname">Northern Plains Dozer Services</span>
+      <a class="fphone" href="tel:+19183992480">(918) 399-2480</a>
+    </div>
+    <div class="foot-bot">
+      <span>&copy; 2026 Northern Plains Dozer Services &mdash; 708 East Main St, Cushing, OK</span>
+      <span class="concept">Design concept &mdash; prepared by OplyAI</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" id="callbar">
+  <a class="btn btn-clay" href="tel:+19183992480">Call (918) 399-2480</a>
+  <a class="btn btn-ghost" href="#quote" style="background:var(--iron)">Get a Quote</a>
+</div>
+
+<script>
+(function(){
+  var form = document.getElementById('quote-form');
+  var ok = document.getElementById('form-ok');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('q-name');
+    var phone = document.getElementById('q-phone');
+    var svc = document.getElementById('q-service');
+    if(!name.value.trim() || !phone.value.trim() || !svc.value){
+      if(!name.value.trim()){ name.focus(); } else if(!phone.value.trim()){ phone.focus(); } else { svc.focus(); }
+      return;
+    }
+    form.style.display = 'none';
+    ok.classList.add('show');
+  });
+  var bar = document.getElementById('callbar');
+  function onScroll(){
+    if(window.scrollY > 480){ bar.classList.add('show'); } else { bar.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
